@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "cryptography-game"
+version = "0.1.0"
+description = ""
+authors = ["Steven Thornton <steven@steventhornton.ca>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.5.0"
+numpy = "^1.23.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
