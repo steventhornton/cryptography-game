@@ -9,6 +9,7 @@ from hashlib import sha3_256
 pd.set_option('max_colwidth', None)
 pd.set_option('display.max_rows', 500)
 
+# Range to select numbers from
 NUM_RANGE = [0, 100]
 
 
@@ -31,7 +32,7 @@ def play_game():
         valid_input = False
         while not valid_input:
 
-            print("Pick a number between 0 and 100: ", end='')
+            print(f"Pick a number between {NUM_RANGE[0]} and {NUM_RANGE[1]}: ", end='')
             x = input()
 
             # Check if the input was an integer
